@@ -15,16 +15,16 @@ const Banner = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between  ">
       <div className="flex-1">
-        <h2 className="text-4xl uppercase font-bold">Hasibul Hasan |Nayon</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl uppercase font-bold">Hasibul Hasan |Nayon</h2>
         <motion.h3
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-xl md:text-2xl lg:text-4xl mb-3 font-medium"
+          className="text-xl md:text-2xl lg:text-3xl mb-3 font-medium"
         >
            I am a
-          <span className="font-bold text-[#b061df] ml-2">{typeEffect}</span>
+          <span className="font-bold text-[#332885] ml-2">{typeEffect}</span>
         </motion.h3>
         <motion.p
           variants={fadeIn("up", 0.5)}
@@ -36,7 +36,7 @@ const Banner = () => {
           Experiences
         </motion.p>
         <a href={resume} download>
-          <button className="btn btn-primary mt-4">Download Resume</button>
+          <button className="btn btn-primary uppercase mt-4">Download Resume</button>
         </a>
       </div>
       <motion.div

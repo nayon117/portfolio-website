@@ -1,20 +1,43 @@
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/loogo.png";
 
 const Navbar = () => {
   const navLinks = (
     <>
-      <Link className="text-base font-medium" to="/">
-        Portfolio
-      </Link>
-
-      <Link className="text-base font-medium ml-5" to="/about">
+      
+      <li className="font-medium text-base">
+        <NavLink
+          to="/ "
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "bg-[#332885] text-white" : ""
+          }
+        >
+         Portfolio
+        </NavLink>
+      </li>
+      <li className="font-medium text-base">
+        <NavLink
+          to="/about "
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "bg-[#332885] text-white" : ""
+          }
+        >
         About
-      </Link>
-      <Link className="text-base font-medium ml-5" to="/contact">
-        Contact
-      </Link>
+        </NavLink>
+      </li>
+      <li className="font-medium text-base">
+        <NavLink
+          to="/contact"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "bg-[#332885] text-white" : ""
+          }
+        >
+         Contact
+        </NavLink>
+      </li>
+
+      
     </>
   );
 
