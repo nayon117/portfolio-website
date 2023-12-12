@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+ 
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -12,17 +13,19 @@ const myCreatedRoute = createBrowserRouter([
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
-                path: '',
+                index:true,
                 element:<Home></Home>
             },
             {
-                path: 'about',
+                path:'about',
                 element: <About/>
             },
             {
-                path: 'contact',
+                path:'contact',
                 element: <Contact/>
             },
+          
+          
         ]
         
     }
