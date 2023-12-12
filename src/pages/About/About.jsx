@@ -1,5 +1,5 @@
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../../variants";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../variants";
 import { FaCss3, FaFigma, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiExpress, SiFirebase, SiJavascript, SiMongodb, SiTailwindcss } from "react-icons/si";
 
@@ -7,7 +7,12 @@ const About = () => {
   return (
     <div>
       {/* about me part */}
-      <div className="space-y-4 mt-16">
+      <motion.div
+        variants={fadeIn("right", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="space-y-4 mt-16">
         <h2 className="text-3xl border-l-4 border-black font-bold">
          <span className="ml-2"> About</span>
         </h2>
@@ -26,10 +31,15 @@ const About = () => {
           utilized these technologies to create full-stack applications and
           interact with databases seamlessly.
         </p>
-      </div>
+      </motion.div>
 
       {/* skills part */}
-      <div className="mt-16">
+      <motion.div
+        variants={fadeIn("left", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="mt-16">
         <div>
           <h2 className="text-3xl border-l-4 border-black font-bold">
            <span className="ml-2"> General Skills</span>
@@ -55,10 +65,15 @@ const About = () => {
           <button className="btn bg-white"><SiMongodb className="text-green-500 text-xl  "/>MongoDB</button>
           
         </div>
-      </div>
+      </motion.div>
       
       {/* education part */}
-      <div className="mt-16">
+      <motion.div
+        variants={fadeIn("right", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="mt-16">
         <div>
           <h2 className="text-3xl border-l-4 border-black font-bold"><span className="ml-2">Education</span></h2>
         </div>
@@ -142,7 +157,7 @@ const About = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
