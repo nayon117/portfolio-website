@@ -15,6 +15,7 @@ const Banner = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between  ">
       <div className="flex-1">
+        <h2 className="text-4xl uppercase font-bold">Hasibul Hasan |Nayon</h2>
         <motion.h3
           variants={fadeIn("up", 0.3)}
           initial="hidden"
@@ -22,7 +23,7 @@ const Banner = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="text-xl md:text-2xl lg:text-4xl mb-3 font-medium"
         >
-          Hi, I am a
+           I am a
           <span className="font-bold text-[#b061df] ml-2">{typeEffect}</span>
         </motion.h3>
         <motion.p

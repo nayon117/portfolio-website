@@ -1,6 +1,8 @@
 import skillify1 from "../assets/skillify1.jpg";
 import automotive from "../assets/automotiveg.jpg";
 import foodunityy from "../assets/foodunityy.jpg";
+import { motion } from 'framer-motion'
+import { fadeIn } from "../../variants";
 const Projects = () => {
   return (
     <div>
@@ -10,7 +12,12 @@ const Projects = () => {
               </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        <div className="card card-compact  bg-base-100 shadow-xl">
+        <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+          className="card card-compact  bg-base-100 shadow-xl">
           <figure>
             <img className="h-40" src={skillify1} alt="skillify" />
           </figure>
@@ -23,8 +30,13 @@ const Projects = () => {
             <a className="text-blue-700 underline" href=" https://skillify-client.web.app/" target="blank">Live</a>
             </div>
           </div>
-        </div>
-        <div className="card card-compact  bg-base-100 shadow-xl">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="card card-compact  bg-base-100 shadow-xl">
           <figure>
             <img className="h-40" src={foodunityy} alt="Food Unity" />
           </figure>
@@ -37,8 +49,11 @@ const Projects = () => {
             <a className="text-blue-700 underline" href=" https://food-unity-client.web.app/" target="blank">Live</a>
             </div>
           </div>
-        </div>
-        <div className="card card-compact  bg-base-100 shadow-xl">
+        </motion.div>
+        <motion.div variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }} className="card card-compact  bg-base-100 shadow-xl">
           <figure>
             <img className="h-40" src={automotive} alt="Shoes" />
           </figure>
@@ -51,7 +66,7 @@ const Projects = () => {
             <a className="text-blue-700 underline" href=" https://automotive-gearup.web.app/" target="blank">Live</a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

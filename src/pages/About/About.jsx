@@ -5,14 +5,14 @@ import { SiExpress, SiFirebase, SiJavascript, SiMongodb, SiTailwindcss } from "r
 
 const About = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* about me part */}
       <motion.div
         variants={fadeIn("right", 0.5)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="space-y-4 mt-16">
+        className="space-y-4 mt-16 overflow-x-hidden">
         <h2 className="text-3xl border-l-4 border-black font-bold">
          <span className="ml-2"> About</span>
         </h2>
@@ -39,7 +39,7 @@ const About = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="mt-16">
+        className="mt-16 overflow-x-hidden">
         <div>
           <h2 className="text-3xl border-l-4 border-black font-bold">
            <span className="ml-2"> General Skills</span>
@@ -73,7 +73,7 @@ const About = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="mt-16">
+        className="mt-16 overflow-x-hidden">
         <div>
           <h2 className="text-3xl border-l-4 border-black font-bold"><span className="ml-2">Education</span></h2>
         </div>
@@ -158,6 +158,68 @@ const About = () => {
           </ul>
         </div>
       </motion.div>
+
+      <div>
+      <h2 className="text-3xl border-l-4 border-black font-bold">
+         <span className="ml-2"> Experience</span>
+        </h2>
+        <div>
+        <div className="bg-white p-6 rounded-md shadow-md">
+          <h3 className="text-lg font-semibold mb-2">Donation Campaign Platform</h3>
+          <p className="text-gray-600 mb-2">August 2023 - Present</p>
+          <p className="text-gray-800">
+            Developed a donation campaign platform using React and Tailwind CSS. The platform facilitates quick and secure donations to various charitable causes, allowing users to discover and support initiatives effortlessly.
+          </p>
+          <p className="text-gray-600 mt-2">
+            <strong>Tech Stack:</strong> React, Tailwind CSS
+          </p>
+          <a
+            href="https://guileless-centaur-9a89fe.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline inline-block mt-2"
+          >
+            View Project
+          </a>
+        </div>
+        <div className="bg-white p-6 rounded-md shadow-md">
+          <h3 className="text-lg font-semibold mb-2">Bistro Boss</h3>
+          <p className="text-gray-600 mb-2">November 2023 - Present</p>
+          <p className="text-gray-800">
+          Developed a restaurant website using React, Tailwind CSS, Node.js, Express, and MongoDB. The platform provides a seamless experience for users to explore the restaurants menu, place orders, and discover special offers. Implemented secure payment features for online transactions.
+          </p>
+          <p className="text-gray-600 mt-2">
+            <strong>Tech Stack:</strong> React, Tailwind CSS, Node,Express,MongoDB
+          </p>
+          <a
+            href="https://bistro-boss-c.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline inline-block mt-2"
+          >
+            View Project
+          </a>
+        </div>
+        <div className="bg-white p-6 rounded-md shadow-md">
+          <h3 className="text-lg font-semibold mb-2">E-commerce Shop Development</h3>
+          <p className="text-gray-600 mb-2">August 2023 - Present</p>
+          <p className="text-gray-800">
+          Developed an e-commerce shop website using React and Tailwind CSS. The platform offers a user-friendly shopping experience, allowing customers to browse products, add items to their cart, and securely complete transactions. Implemented responsive design for a seamless experience across devices.
+          </p>
+          <p className="text-gray-600 mt-2">
+            <strong>Tech Stack:</strong> React, Tailwind CSS
+          </p>
+          <a
+            href="https://heroic-dragon-7a1e95.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline inline-block mt-2"
+          >
+            View Project
+          </a>
+        </div>
+        </div>
+      </div>
     </div>
   );
 };

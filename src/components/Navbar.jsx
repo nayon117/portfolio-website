@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "../assets/loogo.png";
 
 const Navbar = () => {
   const navLinks = (
@@ -46,7 +46,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="  text-xl">
-          <img className="w-1/4" src={logo} alt="Hasibul Hasan" />
+          <img className="w-1/2 md:w-1/4" src={logo} alt="Hasibul Hasan" />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
