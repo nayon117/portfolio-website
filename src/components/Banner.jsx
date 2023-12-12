@@ -10,7 +10,7 @@ const Banner = () => {
     deleteSpeed: 50,
   });
   return (
-    <div className="flex items-center justify-between  ">
+    <div className="flex flex-col md:flex-row items-center justify-between  ">
       <div className="flex-1">
         <h3 className="text-xl md:text-2xl lg:text-4xl mb-3 font-medium">
           Hi, I am a

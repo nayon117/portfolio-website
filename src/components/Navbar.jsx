@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const navLinks = (
     <>
      
-      <li><Link onClick={()=>{window.scrollTo(0,0)}} to="/#about">About</Link></li>
-      <li><Link onClick={()=>{window.scrollTo(0,0)}} to="/#projects">Projects</Link></li>
-      <li><Link onClick={()=>{window.scrollTo(0,0)}} to="/#contact">Contact</Link></li>
+      <li><Link className="text-base font-medium" onClick={()=>{window.scrollTo(0,0)}} to="/">Portfolio</Link></li>
+      <li><Link className="text-base font-medium" onClick={()=>{window.scrollTo(0,0)}} to="/about">About</Link></li>
+      <li><Link className="text-base font-medium" onClick={()=>{window.scrollTo(0,0)}} to="/contact">Contact</Link></li>
       
     </>
   );
@@ -23,8 +24,11 @@ const Navbar = () => {
         </ul>
       </div>
      
-      <div className=" navbar-end lg:navbar-start">
-      <a className="  text-xl">N</a>
+      <div className=" navbar-end lg:navbar-start flex items-center gap-2 ">
+        
+          <img className="w-[6%]" src={logo} alt="" />
+     
+        <span className="whitespace-nowrap text-xl font-medium">Hasibul Hasan | Nayon</span>
       </div>
     <div className="navbar-end hidden lg:flex ">
       <ul className="menu menu-horizontal gap-10 px-1">
