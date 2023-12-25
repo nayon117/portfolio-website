@@ -1,6 +1,6 @@
 import { useTypewriter } from "react-simple-typewriter";
 import bannerImg from "../assets/banner.png";
-import resume from "../../public/resume.pdf";
+import resume from "../../public/Hasibul Hasan's Resume.pdf";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { FaDownload } from "react-icons/fa";
