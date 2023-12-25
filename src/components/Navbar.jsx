@@ -1,86 +1,71 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/loogo.png";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const navLinks = (
     <>
-      
       <li className="font-medium text-base">
         <NavLink
           to="/ "
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#332885] text-white" : ""
+            isPending ? "pending" : isActive ? "bg-first text-white" : ""
           }
         >
-         Portfolio
+          Portfolio
         </NavLink>
       </li>
       <li className="font-medium text-base">
         <NavLink
           to="/about "
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#332885] text-white" : ""
+            isPending ? "pending" : isActive ? "bg-first text-white" : ""
           }
         >
-        About
+          About
         </NavLink>
       </li>
       <li className="font-medium text-base">
         <NavLink
           to="/contact"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#332885] text-white" : ""
+            isPending ? "pending" : isActive ? "bg-first text-white" : ""
           }
         >
-         Contact
+          Contact
         </NavLink>
       </li>
-
-      
     </>
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-third section-container shadow-md   top-0 left-0 right-0">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+            <IoMenu />
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-third rounded-box w-52"
           >
             {navLinks}
           </ul>
         </div>
-        <a className="  text-xl">
-          <img className="w-1/2 md:w-1/4" src={logo} alt="Hasibul Hasan" />
-        </a>
+        <a className="  text-xl">Hasibul</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-3">
         <a href="https://github.com/nayon117" target="blank">
-          <FaGithub className="text-xl" />
+          <FaGithub className="text-2xl" />
         </a>
-        <a href="https://www.linkedin.com/in/hasibul-hasan-nayon-3b35362a3/" target="blank">
-          <FaLinkedin className="text-xl" />
+        <a
+          href="https://www.linkedin.com/in/hasibul-hasan-nayon-3b35362a3/"
+          target="blank"
+        >
+          <FaLinkedin className="text-2xl" />
         </a>
       </div>
     </div>

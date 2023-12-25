@@ -14,7 +14,7 @@ const About = () => {
         viewport={{ once: false, amount: 0.3 }}
         className="space-y-4 mt-16 overflow-x-hidden">
         <h2 className="text-3xl border-l-4 border-black font-bold">
-         <span className="ml-2"> About</span>
+         <span className="ml-2 text-first"> About</span>
         </h2>
         <p className="text-xl font-medium">
           👋 I&apos;m a frontend developer passionate about crafting beautiful
@@ -42,27 +42,27 @@ const About = () => {
         className="mt-16 overflow-x-hidden">
         <div>
           <h2 className="text-3xl border-l-4 border-black font-bold">
-           <span className="ml-2"> General Skills</span>
+           <span className="ml-2 text-first">Proficient in</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
-          <button className="btn bg-white"><FaHtml5 className="text-orange-500 text-xl  "/> HTML5 MARKUP</button>
-          <button className="btn bg-white"><FaCss3 className="text-[#2563eb] text-xl  "/>CSS3</button>
-          <button className="btn bg-white"><SiTailwindcss className="text-[#14b8a6] text-xl  " />Tailwind CSS</button>
-          <button className="btn bg-white"><SiJavascript className="text-yellow-500 text-xl  "/>Javascript</button>
-          <button className="btn bg-white"><FaReact className="text-[#14b8a6] text-xl  "/>React</button>
-          <button className="btn bg-white"><SiFirebase className="text-yellow-500 text-xl  "/>Firebase</button>
-          <button className="btn bg-white"><FaFigma className="text-[#14b8a6] text-xl  "/>Figma</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><FaHtml5 className="text-orange-500 text-xl  "/> HTML5 MARKUP</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><FaCss3 className="text-[#2563eb] text-xl  "/>CSS3</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><SiTailwindcss className="text-[#14b8a6] text-xl  " />Tailwind CSS</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><SiJavascript className="text-yellow-500 text-xl  "/>Javascript</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><FaReact className="text-[#14b8a6] text-xl  "/>React</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><SiFirebase className="text-yellow-500 text-xl  "/>Firebase</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><FaFigma className="text-[#14b8a6] text-xl  "/>Figma</button>
         </div>
         <div className="mt-12">
           <h2 className="text-xl border-l-4 border-black font-bold">
-           <span className="ml-2"> Familiar with</span>
+           <span className="ml-2 text-first"> Familiar with</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
-          <button className="btn bg-white"><FaNodeJs className="text-green-500 text-xl  "/>Node</button>
-          <button className="btn bg-white"><SiExpress  className="text-orange-500 text-xl  "/>Express JS</button>
-          <button className="btn bg-white"><SiMongodb className="text-green-500 text-xl  "/>MongoDB</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><FaNodeJs className="text-green-500 text-xl  "/>Node</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><SiExpress  className="text-orange-500 text-xl  "/>Express JS</button>
+          <button className="btn bg-white text-second hover:bg-second hover:text-white"><SiMongodb className="text-green-500 text-xl  "/>MongoDB</button>
           
         </div>
       </motion.div>
@@ -75,7 +75,7 @@ const About = () => {
         viewport={{ once: false, amount: 0.3 }}
         className="mt-16 overflow-x-hidden">
         <div>
-          <h2 className="text-3xl border-l-4 border-black font-bold"><span className="ml-2">Education</span></h2>
+          <h2 className="text-3xl border-l-4 border-black font-bold"><span className="ml-2 text-first">Education</span></h2>
         </div>
         <div>
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -161,7 +161,7 @@ const About = () => {
 
       <div>
       <h2 className="text-3xl border-l-4 border-black font-bold">
-         <span className="ml-2"> Experience</span>
+         <span className="ml-2 text-first"> Experience</span>
         </h2>
         <div>
         <div className="bg-white p-6 rounded-md shadow-md">
@@ -177,7 +177,7 @@ const About = () => {
             href="https://guileless-centaur-9a89fe.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline inline-block mt-2"
+            className="text-second font-medium hover:underline inline-block mt-2"
           >
             View Project
           </a>
@@ -195,7 +195,7 @@ const About = () => {
             href="https://bistro-boss-c.web.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline inline-block mt-2"
+            className="text-second font-medium hover:underline inline-block mt-2"
           >
             View Project
           </a>
@@ -213,7 +213,7 @@ const About = () => {
             href="https://heroic-dragon-7a1e95.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline inline-block mt-2"
+            className="text-second font-medium hover:underline inline-block mt-2"
           >
             View Project
           </a>

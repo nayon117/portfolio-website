@@ -1,6 +1,7 @@
 import { useTypewriter } from "react-simple-typewriter";
-import bannerImg from "../assets/banner.json";
-import Lottie from "lottie-react";
+// import bannerImg from "../assets/banner.json";
+import bannerImg from "../assets/banner.png";
+// import Lottie from "lottie-react";
 import resume from "../../public/resume.pdf";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -13,8 +14,8 @@ const Banner = () => {
     deleteSpeed: 50,
   });
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between  ">
-      <div className="flex-1">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6 mt-12 ">
+      <div className="md:w-1/2 space-y-6">
         <h2 className="text-2xl md:text-3xl lg:text-4xl uppercase font-bold">Hasibul Hasan |Nayon</h2>
         <motion.h3
           variants={fadeIn("up", 0.3)}
@@ -24,7 +25,7 @@ const Banner = () => {
           className="text-xl md:text-2xl lg:text-3xl mb-3 font-medium"
         >
            I am a
-          <span className="font-bold text-[#332885] ml-2">{typeEffect}</span>
+          <span className="font-bold text-first ml-2">{typeEffect}</span>
         </motion.h3>
         <motion.p
           variants={fadeIn("up", 0.5)}
@@ -36,16 +37,16 @@ const Banner = () => {
           Experiences
         </motion.p>
         <a href={resume} download>
-          <button className="btn btn-primary uppercase mt-4">Download Resume</button>
+          <button className="animate__animated animate__zoomIn animate__infinite	infinite animate__slow bg-white border-first btn hover:bg-second hover:text-white mt-6 uppercase">Resume</button>
         </a>
       </div>
       <motion.div
       variants={fadeIn("down", 0.5)}
       initial="hidden"
       whileInView={"show"}
-      
-        className="flex-1 ">
-        <Lottie animationData={bannerImg}></Lottie>
+        className="md:w-1/2 text-center mx-auto">
+        {/* <Lottie animationData={bannerImg}></Lottie> */}
+        <img className="" src={bannerImg} alt="" />
       </motion.div>
     </div>
   );

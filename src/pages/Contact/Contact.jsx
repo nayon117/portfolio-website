@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="py-8 lg:py-16 ">
           <h2
            
-            className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900  "
+            className="mb-4 text-4xl tracking-tight font-extrabold text-center text-first  "
           >
             GET IN TOUCH CONTACT
           </h2>
@@ -68,7 +68,7 @@ const Contact = () => {
               className="block p-2.5 w-full text-sm text-gray-900   rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
               placeholder=" Your Message..."
             />
-            <input type="submit" value="Send your Message" className="btn btn-primary mt-4" />
+            <input type="submit" value="submit" className="btn bg-second text-white mt-4" />
           </form>
             </div>
             <div className="flex-1">
