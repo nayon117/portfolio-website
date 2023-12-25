@@ -16,7 +16,7 @@ const Projects = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="card card-compact  bg-base-100 shadow-xl"
         >
           <figure>
@@ -33,21 +33,21 @@ const Projects = () => {
             </p>
             <div className="card-actions flex justify-around items-center ">
               <a
-                className="text-second underline"
+                className="btn-style"
                 href="https://github.com/nayon117/skillify-client"
                 target="blank"
               >
                 Client
               </a>
               <a
-                className="text-second underline"
+                className="btn-style"
                 href="https://github.com/nayon117/skillify-server"
                 target="blank"
               >
                 Sever
               </a>
               <a
-                className="text-second underline"
+                className="btn-style"
                 href=" https://skillify-client.web.app/"
                 target="blank"
               >
@@ -60,7 +60,7 @@ const Projects = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="card card-compact  bg-base-100 shadow-xl"
         >
           <figure>
@@ -76,21 +76,21 @@ const Projects = () => {
             </p>
             <div className="card-actions flex justify-around items-center ">
               <a
-                className="text-second underline"
+                className="btn-style"
                 href="https://github.com/nayon117/food-unity-client"
                 target="blank"
               >
                 Client
               </a>
               <a
-                className="text-second underline"
+                className="btn-style"
                 href="https://github.com/nayon117/food-unity-server"
                 target="blank"
               >
                 Sever
               </a>
               <a
-                className="text-second underline"
+                className="btn-style"
                 href=" https://food-unity-client.web.app/"
                 target="blank"
               >
@@ -103,7 +103,7 @@ const Projects = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="card card-compact  bg-base-100 shadow-xl"
         >
           <figure>
@@ -118,21 +118,21 @@ const Projects = () => {
             </p>
             <div className="card-actions flex justify-around items-center ">
               <a
-                className="text-second underline"
+                className="btn-style"
                 href="https://github.com/nayon117/automotive-gearup-client"
                 target="blank"
               >
                 Client
               </a>
               <a
-                className="text-second underline"
+                className="btn-style"
                 href="https://github.com/nayon117/automotive-gearup-server"
                 target="blank"
               >
                 Sever
               </a>
               <a
-                className="text-second underline"
+                className="btn-style"
                 href=" https://automotive-gearup.web.app/"
                 target="blank"
               >

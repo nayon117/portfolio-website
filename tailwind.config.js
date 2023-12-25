@@ -9,7 +9,7 @@ export default {
       colors: {
         "first":"#5F0F40",
         "second":"#8b165e",
-        "third":"#EEF0E5",
+        "third":"#FDF7E4",
       } 
     },
   },

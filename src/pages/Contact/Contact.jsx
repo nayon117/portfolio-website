@@ -29,19 +29,19 @@ const Contact = () => {
   };
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 lg:py-16 ">
+      <section className="bg-white">
+        <div className="pt-8 lg:pt-16 ">
           <h2
            
             className="mb-4 text-4xl tracking-tight font-extrabold text-center text-first  "
           >
             GET IN TOUCH CONTACT
           </h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500   sm:text-xl">
+          <p className="font-light text-center text-gray-500   sm:text-xl">
             Looking for a professional web developer to build your next website?
             Let&apos;s talk and contact me today!
           </p>
-          <div className="flex flex-col-reverse md:flex-row items-center justify-between">
+          <div className="mt-8 gap-6 flex flex-col-reverse md:flex-row items-center justify-between">
             {/* form */}
             <div className="flex-1 space-y-3">
             <form ref={form} onSubmit={sendEmail}>
@@ -56,7 +56,7 @@ const Contact = () => {
             <input
               type="email"
               name="user_email"
-              className="shadow-sm   border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500  p-2 w-full  my-4  "
+              className="shadow-sm  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 p-2 w-full  my-4  "
               placeholder="Your Email Adress"
               required
             />
@@ -68,11 +68,11 @@ const Contact = () => {
               className="block p-2.5 w-full text-sm text-gray-900   rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
               placeholder=" Your Message..."
             />
-            <input type="submit" value="submit" className="btn bg-second text-white mt-4" />
+            <input type="submit" value="submit your message" className="btn hover:bg-first hover:text-white bg-white text-first border-first mt-4" />
           </form>
             </div>
             <div className="flex-1">
-              <Lottie animationData={contractImg}></Lottie>
+              <Lottie animationData={contractImg} loop={false}></Lottie>
             </div>
          </div>
         </div>

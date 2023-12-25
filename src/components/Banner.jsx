@@ -1,10 +1,10 @@
 import { useTypewriter } from "react-simple-typewriter";
-// import bannerImg from "../assets/banner.json";
 import bannerImg from "../assets/banner.png";
-// import Lottie from "lottie-react";
 import resume from "../../public/resume.pdf";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import { FaDownload } from "react-icons/fa";
+
 
 const Banner = () => {
   const [typeEffect] = useTypewriter({
@@ -37,7 +37,7 @@ const Banner = () => {
           Experiences
         </motion.p>
         <a href={resume} download>
-          <button className="animate__animated animate__zoomIn animate__infinite	infinite animate__slow bg-white border-first btn hover:bg-second hover:text-white mt-6 uppercase">Resume</button>
+          <button className=" bg-white border-first btn hover:bg-second hover:text-white text-second mt-6 uppercase"><FaDownload /> Resume</button>
         </a>
       </div>
       <motion.div

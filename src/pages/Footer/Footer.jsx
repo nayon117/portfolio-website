@@ -3,11 +3,11 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center   p-10 bg-third  rounded">
+    <footer className="footer footer-center mt-16 p-10 bg-third  rounded">
       <div className=" section-container space-y-4">
         <nav className="grid grid-flow-col gap-4">
           <Link to="/about" className="link link-hover">
-            About us
+            About Me
           </Link>
           <Link to="/blog" className="link link-hover">
             Blog

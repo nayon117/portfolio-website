@@ -1,16 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
-
+import logo from '../assets/loogo.png'
 const Navbar = () => {
   const navLinks = (
     <>
       <li className="font-medium text-base">
         <NavLink
           to="/ "
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-first text-white" : ""
-          }
+          className={({ isActive}) =>
+              isActive ? "bg-first text-white" : ""
+          }  
         >
           Portfolio
         </NavLink>
@@ -18,8 +18,8 @@ const Navbar = () => {
       <li className="font-medium text-base">
         <NavLink
           to="/about "
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-first text-white" : ""
+          className={({ isActive}) =>
+              isActive ? "bg-first text-white" : ""
           }
         >
           About
@@ -27,9 +27,9 @@ const Navbar = () => {
       </li>
       <li className="font-medium text-base">
         <NavLink
-          to="/contact"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-first text-white" : ""
+          to="/contact"  
+          className={({ isActive}) =>
+              isActive ? "bg-first text-white" : ""
           }
         >
           Contact
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <IoMenu />
+            <IoMenu className="text-2xl" />
           </div>
           <ul
             tabIndex={0}
@@ -52,7 +52,9 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="  text-xl">Hasibul</a>
+        <a className="  text-xl">
+           <img className="w-8" src={logo} alt="" />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
